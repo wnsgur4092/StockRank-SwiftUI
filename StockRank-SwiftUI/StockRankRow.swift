@@ -10,7 +10,7 @@ import SwiftUI
 struct StockRankRow: View {
     
     @State private var isLiking : Bool = false
-    var stock : StockModel
+    @Binding var stock : StockModel
     
     var body: some View {
         HStack{
@@ -38,14 +38,7 @@ struct StockRankRow: View {
                 }
             }
             Spacer()
-            
-//            Image(systemName: "heart.fill")
-//                .resizable()
-//                .renderingMode(.template)
-//                .aspectRatio(contentMode: .fit)
-//                .frame(width: 40, height: 40)
-//                .foregroundColor(.gray)
-            
+                        
             LikeButton(isLiking: $isLiking)
         }
         .padding()
@@ -58,7 +51,8 @@ struct StockRankRow: View {
 
 struct StockRankRow_Previews: PreviewProvider {
     static var previews: some View {
-        StockRankRow(stock: StockModel.list[0])
+        StockRankRow(stock: .constant(StockModel.list[0]))
+            .previewLayout(.fixed(width: 390, height: 80))
     }
 }
 

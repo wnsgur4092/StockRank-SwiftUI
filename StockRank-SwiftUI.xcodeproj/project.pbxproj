@@ -16,6 +16,7 @@
 		BFFB6EED28BE617E0053F5CD /* StockRankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFB6EEC28BE617E0053F5CD /* StockRankView.swift */; };
 		BFFB6EEF28BE61B50053F5CD /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFB6EEE28BE61B50053F5CD /* StockModel.swift */; };
 		BFFB6EF128BE63010053F5CD /* StockRankRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFB6EF028BE63010053F5CD /* StockRankRow.swift */; };
+		BFFB6F2D28BE77FC0053F5CD /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFB6F2C28BE77FC0053F5CD /* StockDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		BFFB6EEC28BE617E0053F5CD /* StockRankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankView.swift; sourceTree = "<group>"; };
 		BFFB6EEE28BE61B50053F5CD /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
 		BFFB6EF028BE63010053F5CD /* StockRankRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankRow.swift; sourceTree = "<group>"; };
+		BFFB6F2C28BE77FC0053F5CD /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				BFFB6EC228BE61620053F5CD /* StockRank_SwiftUIApp.swift */,
 				BFFB6EEC28BE617E0053F5CD /* StockRankView.swift */,
 				BFFB6EF028BE63010053F5CD /* StockRankRow.swift */,
+				BFFB6F2C28BE77FC0053F5CD /* StockDetailView.swift */,
 				BFFB6EEE28BE61B50053F5CD /* StockModel.swift */,
 				BFFB6EC628BE61630053F5CD /* Assets.xcassets */,
 				BFFB6EC828BE61630053F5CD /* Preview Content */,
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFFB6EEF28BE61B50053F5CD /* StockModel.swift in Sources */,
+				BFFB6F2D28BE77FC0053F5CD /* StockDetailView.swift in Sources */,
 				BFFB6EF128BE63010053F5CD /* StockRankRow.swift in Sources */,
 				BFFB6EED28BE617E0053F5CD /* StockRankView.swift in Sources */,
 				BFFB6EC328BE61620053F5CD /* StockRank_SwiftUIApp.swift in Sources */,
