@@ -9,7 +9,6 @@ import SwiftUI
 
 struct StockRankRow: View {
     
-    @State private var isLiking : Bool = false
     @Binding var stock : StockModel
     
     var body: some View {
@@ -27,7 +26,7 @@ struct StockRankRow: View {
                 Text("\(stock.name)")
                     .font(.system(size: 12))
                     .foregroundColor(.white)
-                    
+                
                 HStack{
                     Text("\(stock.price)")
                         .font(.system(size: 12))
@@ -38,16 +37,21 @@ struct StockRankRow: View {
                 }
             }
             Spacer()
-                        
-            LikeButton(isLiking: $isLiking)
+            Image(systemName:"heart.fill")
+                .resizable()
+                .renderingMode(.template)
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 40, height: 40)
+                .foregroundColor(stock.isFavorite ? .white : .gray)
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.black)
-
+        
         
     }
 }
+
 
 struct StockRankRow_Previews: PreviewProvider {
     static var previews: some View {
@@ -56,20 +60,3 @@ struct StockRankRow_Previews: PreviewProvider {
     }
 }
 
-struct LikeButton: View {
-    @Binding var isLiking : Bool
-    
-    var body: some View {
-        Button {
-            self.isLiking.toggle()
-        } label: {
-            Image(systemName: isLiking ? "heart.fill" : "heart")
-                .resizable()
-                .renderingMode(.template)
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 40, height: 40)
-                .foregroundColor(.gray)
-            
-        }
-    }
-}
